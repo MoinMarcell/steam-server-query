@@ -1,5 +1,5 @@
 # Build-Stage
-FROM --platform=linux/amd64 maven:3.9.4-openjdk-21 AS builder
+FROM --platform=linux/amd64 maven:3.9.4 AS builder
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
